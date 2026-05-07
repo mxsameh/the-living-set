@@ -23,19 +23,19 @@
   flex-shrink: 0;
 }
 .h_r {
-  display: none;
-  @media (width > 768px) {
-    display: flex;
-    justify-content: flex-end;
-    gap: 28px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 28px;
+  @media (width < 770px) {
+    display: none;
   }
 }
 
 .h_n {
-  display: none;
-  @media (width > 768px) {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
+  @media (width < 770px) {
+    display: none;
   }
 }
 .h_n-item {
@@ -66,11 +66,11 @@
 }
 
 .h_r-m {
-  display: flex;
-  gap: 20px;
-  justify-content: flex-end;
-  @media (width > 768px) {
-    display: none;
+  display: none;
+  @media (width < 770px) {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
   }
 }
 .h_r-m > div {
@@ -142,13 +142,13 @@ DROPDOWN MENU
 MENU ICON
 /****************/
 #menu-icon {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  height: 24px;
-  justify-content: center;
-  @media (width > 768px) {
-    display: none;
+  display: none;
+  @media (width < 770px) {
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
   }
 }
 
@@ -198,9 +198,10 @@ MENU DRAWER
   width: 100%;
   background-color: white;
   z-index: 999;
+  display: none;
 
-  @media (width > 768px) {
-    display: none;
+  @media (width < 770px) {
+    display: block;
   }
 }
 

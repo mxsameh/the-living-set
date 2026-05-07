@@ -6,31 +6,39 @@
   width: 100%;
   height: 100vh;
   z-index: 99999;
-  transition: left 0s 0.2s, opacity 0.2s;
-  @media (width > 768px) {
-    background: rgba(0, 0, 0, 0.7);
+  transition:
+    left 0s 0.2s,
+    opacity 0.2s;
+  background: rgba(0, 0, 0, 0.7);
+  @media (width < 770px) {
+    background: unset;
   }
 }
 
 .cd_.active {
   left: 0;
   opacity: 1;
-  transition: left 0s, opacity 0.2s;
+  transition:
+    left 0s,
+    opacity 0.2s;
 }
 
 .cd {
-  width: 100%;
   height: 100%;
   background: white;
   display: flex;
   flex-direction: column;
   overflow: auto;
-  transition: 0.2s opacity, 0.2s transform;
+  transition:
+    0.2s opacity,
+    0.2s transform;
   opacity: 0;
   transform: translateX(40px);
-  @media (width > 768px) {
-    width: 480px;
-    margin-left: auto;
+  width: 480px;
+  margin-left: auto;
+  @media (width < 770px) {
+    width: 100%;
+    margin-left: unset;
   }
 }
 

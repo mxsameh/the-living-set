@@ -3,9 +3,20 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: "helv", serif;
+html {
+  font-size: calc(100vw / 400);
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
   overscroll-behavior: none;
+  @media (width > 770px) {
+    font-size: calc(100vw / 1440);
+  }
+}
+
+body {
+  font-family: "h", serif;
+  overscroll-behavior: none;
+  font-size: 14rem;
 }
 li {
   list-style: none;

@@ -1,8 +1,9 @@
 :root {
-  --h-h: 80px;
-  --p-i: 20px;
-  @media (width> 1024px) {
-    --p-i: 40px;
+  --h-h: 60px;
+  --p-i: 40px;
+  @media (width < 770px) {
+    --h-h: 80px;
+    --p-i: 20px;
   }
 }
 .h-s {
@@ -17,4 +18,15 @@
 .s-s {
   height: 100vh;
   overflow: hidden;
+}
+
+.m-o {
+  @media (width >= 770px) {
+    display: none !important;
+  }
+}
+.d-o {
+  @media (width < 770px) {
+    display: none !important;
+  }
 }

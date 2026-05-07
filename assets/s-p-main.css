@@ -7,22 +7,22 @@
   margin-inline: auto;
 }
 .s-video figure {
-  aspect-ratio: 9/16;
+  aspect-ratio: 16/9;
   overflow: hidden;
   background-color: #e5e5e5;
-  @media (width>768px) {
-    aspect-ratio: 16/9;
+  @media (width < 770px) {
+    aspect-ratio: 9/16;
   }
 }
 .s-video video:first-child {
-  display: none;
-  @media (width>768px) {
-    display: block;
+  @media (width < 770px) {
+    display: none;
   }
 }
 .s-video video:last-child {
-  @media (width>768px) {
-    display: none;
+  display: none;
+  @media (width < 770px) {
+    display: unset;
   }
 }
 
