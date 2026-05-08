@@ -1,3 +1,5 @@
+{{ 's-product-form.css' | asset_url | stylesheet_tag }}
+
 {% liquid
   assign current_variant = product.selected_or_first_available_variant
   assign available = current_variant.available
@@ -8,9 +10,11 @@
   {% comment %}
     Options
   {% endcomment %}
-  {% for option in product.options_with_values %}
-    {% render 'product-option', option:option %}
-  {% endfor %}
+  {% unless product.has_only_default_variant %}
+    {% for option in product.options_with_values %}
+      {% render 'product-option', option: option %}
+    {% endfor %}
+  {% endunless %}
 
   {% comment %}
     Add to Cart

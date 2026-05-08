@@ -1,0 +1,64 @@
+/* PRODUCT OPTIONS */
+.pf {
+  margin-top: 40px;
+  @media (width > 1000px) {
+    margin-top: 80px;
+  }
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  &:not(:first-of-type) {
+    margin-top: 24px;
+  }
+}
+.option_name {
+  width: 120px;
+  font-size: 14px;
+}
+
+.option_values {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.value input[type="radio"] {
+  display: none;
+}
+.value label {
+  display: block;
+  cursor: pointer;
+}
+
+.value.not-swatch label {
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  font-size: 14px;
+}
+.value.not-swatch input[type="radio"]:checked + label {
+  border-color: black;
+}
+
+.value.is-swatch label {
+  padding: 4px;
+  width: 24px;
+  aspect-ratio: 1;
+  border: 1px solid transparent;
+  /* border-radius: 100%; */
+}
+.value.is-swatch input[type="radio"]:checked + label {
+  border-color: black;
+}
+.swatch {
+  display: block;
+  width: 14px;
+  aspect-ratio: 1 / 1;
+  background: var(--swatch--background);
+  background-position: var(--swatch-focal-point, initial);
+  background-size: cover;
+  background-origin: border-box;
+  /* border-radius: 100%; */
+}
