@@ -1,12 +1,24 @@
 {{ 's-p-shop.css' | asset_url | stylesheet_tag }}
-{% comment %} {{ 's-product-card.css' | asset_url | stylesheet_tag }} {% endcomment %}
+{{ 's-product-card.css' | asset_url | stylesheet_tag }}
 
 {% liquid
   assign collection = collections.shop
 %}
 
 <div class="p">
+  <div class="colc">
+    <h1>TABLE IS NEVER TRULY STILL</h1>
 
+    {% for product in collection.products %}
+      {% render 'product-card', product: product %}
+    {% endfor %}
+    {% for product in collection.products %}
+      {% render 'product-card', product: product %}
+    {% endfor %}
+    {% for product in collection.products %}
+      {% render 'product-card', product: product %}
+    {% endfor %}
+  </div>
 </div>
 
 {% schema %}

@@ -1,8 +1,47 @@
-.item:nth-child(1),
-.item:nth-child(2),
-.item:nth-child(8n + 3),
-.item:nth-child(8n + 6),
-.item:nth-child(8n + 7),
-.item:nth-child(8n + 10) {
+#h {
+  align-items: flex-start;
+  padding-top: 32rem;
+}
+#h .logo {
+  display: block;
+}
+#h .h_l {
+  display: none;
+}
+.p {
+  padding-inline: var(--p-i);
+}
+.colc {
+  padding-top: 280rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 80rem 44rem;
+}
+
+.colc > * {
   grid-column: span 2;
+  &:nth-child(1),
+  &:nth-child(2),
+  &:nth-child(8n + 3),
+  &:nth-child(8n + 6),
+  &:nth-child(8n + 7),
+  &:nth-child(8n + 10) {
+    grid-column: span 3;
+  }
+  &:nth-child(4n) {
+    grid-column: 5 / span 2;
+  }
+  &:nth-child(4n + 2) {
+    grid-column: 4 / span 3;
+  }
+}
+
+.colc > * {
+}
+
+.colc h1 {
+  font-size: 80rem;
+  line-height: 100%;
+  font-family: "st";
+  font-weight: normal;
 }

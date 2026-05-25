@@ -26,6 +26,14 @@
   display: block;
   width: 80rem;
 }
+.logo {
+  display: none;
+  width: 421rem;
+  position: relative;
+}
+.logo img {
+  position: absolute;
+}
 
 .h_r {
   display: flex;

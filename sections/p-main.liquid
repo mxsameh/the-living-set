@@ -1,5 +1,9 @@
 {{ 's-p-main.css' | asset_url | stylesheet_tag }}
 {{ 's-product-card.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+<script src="{{ 'j-main.js' | asset_url }}" defer></script>
+
 {% assign collection = collections.home %}
 
 <div class="p">
@@ -25,6 +29,21 @@
       {% endfor %}
     </ul>
   </section>
+  <section class="s-gal">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <figure>
+            <img
+              src="{{ block.settings.image | image_url}}"
+              width="auto"
+              height="auto"
+            >
+          </figure>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 </div>
 
 {% schema %}
@@ -32,24 +51,22 @@
   "name": "main",
   "settings": [
     {
-      "id": "d_video",
-      "label": "Desktop Video",
-      "type": "video"
-    },
-    {
-      "id": "m_video",
-      "label": "Mobile Video",
-      "type": "video"
-    },
-    {
       "id": "collection_url",
       "label": "Collection URL",
       "type": "url"
-    },
+    }
+  ],
+  "blocks": [
     {
-      "id": "title",
-      "label": "Title",
-      "type": "text"
+      "name": "Gallery",
+      "type": "gallery",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
     }
   ]
 }
