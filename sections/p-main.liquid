@@ -1,16 +1,29 @@
 {{ 's-p-main.css' | asset_url | stylesheet_tag }}
+{{ 's-product-card.css' | asset_url | stylesheet_tag }}
+{% assign collection = collections.home %}
 
 <div class="p">
-  <section class="s-video">
-    <a href="{{ section.settings.collection_url }}">
-      <figure>
-        {{ section.settings.d_video | video_tag: autoplay: true, muted: true, loop: true, class: 'd-video' }}
-        {{ section.settings.m_video | video_tag: autoplay: true, muted: true, loop: true, class: 'm-video' }}
-      </figure>
-    </a>
-    <h3>
-      {{ section.settings.title | link_to: section.settings.collection_url }}
-    </h3>
+  <section class="s-he">
+    <picture>
+      <source srcset="{{'im-he-ban.png' | asset_url}}" media="(min-width: 770px)">
+      <img src="{{ 'im-he-ban.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+    </picture>
+  </section>
+  <section class="s-colc">
+    <h2>
+      WHERE LIVING <br>
+      BECOMES <i>ART</i> <br>
+      AND EVERY TABLE IS A<br>
+      <i>PERFORMANCE</i>
+    </h2>
+
+    <ul>
+      {% for product in collection.products %}
+        <li>
+          {% render 'product-card', product: product %}
+        </li>
+      {% endfor %}
+    </ul>
   </section>
 </div>
 

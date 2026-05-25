@@ -1,0 +1,17 @@
+{{ 's-p-shop.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 's-product-card.css' | asset_url | stylesheet_tag }} {% endcomment %}
+
+{% liquid
+  assign collection = collections.shop
+%}
+
+<div class="p">
+
+</div>
+
+{% schema %}
+{
+  "name": "shop",
+  "settings": []
+}
+{% endschema %}

@@ -1,0 +1,50 @@
+/*****************
+MENU ICON
+/****************/
+#menu-icon {
+  display: none;
+  @media (width < 770px) {
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+  }
+}
+
+#menu-icon span {
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  transform-origin: center;
+}
+#menu-icon.open span:first-of-type {
+  animation: top 0.4s linear both;
+}
+#menu-icon.open span:last-of-type {
+  animation: bottom 0.4s linear both;
+}
+
+@keyframes top {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(4px) rotate(0);
+  }
+  100% {
+    transform: translateY(4px) rotate(-45deg);
+  }
+}
+@keyframes bottom {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-4px) rotate(0);
+  }
+  100% {
+    transform: translateY(-4px) rotate(45deg);
+  }
+}
+

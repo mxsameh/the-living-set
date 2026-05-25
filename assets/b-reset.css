@@ -42,6 +42,9 @@ select {
   background-color: transparent;
   color: black;
 }
+picture {
+  display: block;
+}
 img,
 video {
   display: block;

@@ -1,10 +1,11 @@
 .pc {
   display: block;
-  border: 1px solid #000;
-  padding: 16rem;
+  /* border: 1px solid #000; */
+  /* padding: 16rem; */
   min-width: 0; /* ✅ Critical to prevent overflow */
 }
 .pc > div {
+  margin-top: 16rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,8 +16,7 @@
   }
 }
 .pc h3 {
-  font-family: "t";
-  font-size: 20rem;
+  font-size: 15rem;
   text-align: center;
   font-weight: normal;
   white-space: nowrap;
@@ -25,5 +25,5 @@
 }
 .pc p {
   flex-shrink: 0;
-  font-size: 16rem;
+  font-size: 15rem;
 }

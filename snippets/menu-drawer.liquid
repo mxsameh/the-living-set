@@ -1,3 +1,5 @@
+{{ 's-menu-drawer.css' | asset_url | stylesheet_tag }}
+
 <div id="menu-drawer" class="d-n">
   <nav>
     {% for link in linklists['main-menu'].links -%}
@@ -22,7 +24,7 @@
 
         {% if has_links %}
           <div class="d_dd">
-            <ul >
+            <ul>
               {% for child_link in link.links %}
                 <li>
                   {{ child_link.title | link_to: child_link.url }}

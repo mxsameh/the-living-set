@@ -13,24 +13,47 @@
 {% endcomment %}
 
 <footer class="f">
-  <div class="f_t">
-    <ul>
-      <li>
-        {{ 'About the Brand' | link_to: '/about' }}
-      </li>
-      <li>{{ 'Contact Us' | link_to: '/contact' }}</li>
-      <li>{{ 'Instagram' | link_to: ig_link }}</li>
-    </ul>
-
-    <div class="nl">
-      {% render 'newsletter' %}
+  <div class="f-0">
+    <div>THE LIVING SET</div>
+    <div>© {{ 'now' | date: '%Y' }}</div>
+  </div>
+  <div class="f-1">
+    <div>CAIRO, EGYPT</div>
+    <div class="time"></div>
+  </div>
+  <div class="f-2">
+    <div>
+      <a href="https://www.instagram.com/thelivingset_/" target="_blank">@THELIVINGSET</a>
+    </div>
+    <div>
+      <a href="mailto:info@thelivingset.com" target="_blank">INFO@THELIVINGSET.COM</a>
     </div>
   </div>
-
-  <div class="f_b">
-    <p>nctrn © 20{{ 'now' | date: '%y' }}</p>
+  <div class="f-3">
+    <div>
+      {{ 'CONTACT US' | link_to: '/pages/contact' }}
+    </div>
+    <div>
+      {{ 'TERMS & CONDITIONS' | link_to: '/pages/terms-and-conditions' }}
+    </div>
   </div>
 </footer>
+
+<script>
+  const timeDiv = document.querySelector('.time');
+
+  function updateTime() {
+    timeDiv.textContent = new Date().toLocaleTimeString('en-US', {
+      timeZone: 'Africa/Cairo',
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true,
+    });
+  }
+
+  updateTime();
+  setInterval(updateTime, 1000);
+</script>
 
 {% schema %}
 {

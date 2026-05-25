@@ -1,0 +1,56 @@
+/*****************
+MENU DRAWER
+/****************/
+#menu-drawer {
+  position: fixed;
+  top: var(--h-h);
+  height: calc(100vh - var(--h-h));
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+  display: none;
+
+  @media (width < 770px) {
+    display: block;
+  }
+}
+
+#menu-drawer nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.d_item {
+  padding: 16px var(--p-i);
+  border-bottom: 1px solid #333;
+}
+.d_item.opened svg {
+  transform: rotate(45deg);
+}
+
+.d_item-h {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.d_item span {
+  font-size: 16px;
+  font-weight: 500;
+}
+.d_item svg {
+  width: 14px;
+  transition: transform 0.2s ease-out;
+}
+.d_dd {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease-out;
+}
+.d_dd ul {
+  padding-top: 24px;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

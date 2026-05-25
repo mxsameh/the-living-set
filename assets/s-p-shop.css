@@ -1,0 +1,8 @@
+.item:nth-child(1),
+.item:nth-child(2),
+.item:nth-child(8n + 3),
+.item:nth-child(8n + 6),
+.item:nth-child(8n + 7),
+.item:nth-child(8n + 10) {
+  grid-column: span 2;
+}

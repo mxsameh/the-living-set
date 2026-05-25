@@ -1,9 +1,9 @@
 :root {
-  --h-h: 60px;
-  --p-i: 40px;
+  --h-h: 82rem;
+  --p-i: 44rem;
   @media (width < 770px) {
-    --h-h: 80px;
-    --p-i: 20px;
+    --h-h: 80rem;
+    --p-i: 20rem;
   }
 }
 .h-s {
