@@ -11,13 +11,51 @@
   "sections": {
     "main": {
       "type": "p-main",
+      "blocks": {
+        "gallery_BXJpRL": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/wxuehomuclgr4hefcmrn.webp"
+          }
+        },
+        "gallery_Q8hEgX": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/alqruaievaxlrazsjgbn.webp"
+          }
+        },
+        "gallery_GRta8n": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/uehserfuhexl6flp2pyn.webp"
+          }
+        },
+        "gallery_cNTYQb": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/ovnbffdcyduoqgapendi.webp"
+          }
+        },
+        "gallery_iCVdin": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/vjyrrruoowdctcgwe14w.webp"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_BXJpRL",
+        "gallery_Q8hEgX",
+        "gallery_GRta8n",
+        "gallery_cNTYQb",
+        "gallery_iCVdin"
+      ],
       "settings": {
-        // "d_video": "shopify://files/videos/7594a74689834926b88e8cd8c4aa8dd7.HD-1080p-7.2Mbps-48407865.mp4",
-        // "m_video": "shopify://files/videos/d70242f11d6d487fa350b8ad2a998d40.HD-1080p-7.2Mbps-48407870.mp4",
-        // "collection_url": "shopify://collections/women",
-        // "title": "Shop the Summer 2025 Womenswear Collection"
+        "collection_url": ""
       }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }
