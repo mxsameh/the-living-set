@@ -1,5 +1,6 @@
 .p {
   /* padding-top: 40px; */
+  padding-bottom: 80rem;
 }
 .s-he {
 }
@@ -45,4 +46,35 @@
   &:nth-of-type(4) {
     grid-column: 4 / span 3;
   }
+}
+
+.s-gal {
+  margin-top: 120rem;
+}
+.s-gal_h {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-inline: var(--p-i);
+}
+.s-gal nav {
+  display: flex;
+  gap: 40rem;
+}
+.s-gal button:nth-child(2) svg {
+  transform: rotate(180deg);
+}
+.s-gal h2 {
+  font-family: "st";
+  font-size: 80rem;
+  line-height: 1;
+  font-weight: normal;
+}
+.swiper_ {
+  margin-top: 40rem;
+  margin-left: 277rem;
+}
+.s-gal .swiper-wrapper {
+  align-items: flex-start;
+  height: unset;
 }

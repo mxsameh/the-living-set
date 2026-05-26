@@ -10,6 +10,7 @@
 }
 .p {
   padding-inline: var(--p-i);
+  padding-bottom: 80rem;
 }
 .colc {
   padding-top: 280rem;

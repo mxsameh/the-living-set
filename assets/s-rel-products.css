@@ -1,0 +1,25 @@
+.s-rel {
+  margin-top: 80rem;
+  padding-inline: var(--p-i);
+  @media (width < 770px) {
+    margin-top: 80rem;
+  }
+}
+.s-rel h2 {
+  font-size: 50rem;
+  letter-spacing: 7%;
+  font-family: "m";
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--c-y);
+  @media (width < 770px) {
+    font-size: 28rem;
+  }
+}
+.s-rel .p-s_ {
+  margin-top: 40rem;
+
+  @media (width< 770px) {
+    margin-top: 24rem;
+  }
+}

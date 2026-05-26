@@ -1,4 +1,14 @@
 .p_g {
+  margin-top: 80rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24rem;
+}
+.p_g figure {
+  width: 100%;
+  aspect-ratio: 4/5;
+}
+/* .p_g {
   width: 100%;
   display: flex;
   @media (width > 1000px) {
@@ -6,8 +16,8 @@
     flex-wrap: wrap;
     padding-right: 40px;
   }
-}
-.p_g figure {
+} */
+/* .p_g figure {
   flex-shrink: 0;
   width: 100%;
   aspect-ratio: 4/5;
@@ -15,4 +25,4 @@
   @media (width> 1000px) {
     width: 50%;
   }
-}
+} */

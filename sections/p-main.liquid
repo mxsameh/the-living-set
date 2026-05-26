@@ -30,17 +30,32 @@
     </ul>
   </section>
   <section class="s-gal">
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        {% for block in section.blocks %}
-          <figure>
-            <img
-              src="{{ block.settings.image | image_url}}"
-              width="auto"
-              height="auto"
-            >
-          </figure>
-        {% endfor %}
+    <div class="s-gal_h">
+      <h2>TABLE IS NEVER TRULY STILL</h2>
+      <nav>
+        <button id="swiper-b-prv">
+          {{ 'i-arrow.svg' | inline_asset_content }}
+        </button>
+        <button id="swiper-b-nxt">
+          {{ 'i-arrow.svg' | inline_asset_content }}
+        </button>
+      </nav>
+    </div>
+    <div class="swiper_">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            <div class="swiper-slide">
+              <figure>
+                <img
+                  src="{{ block.settings.image | image_url}}"
+                  width="auto"
+                  height="auto"
+                >
+              </figure>
+            </div>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </section>

@@ -1,6 +1,6 @@
 {{ 's-product-gallery.css' | asset_url | stylesheet_tag }}
 
-<div class="p_g h-s">
+<div class="p_g">
   {% for media in product.media %}
     {% if media.media_type == 'image' %}
       <figure>

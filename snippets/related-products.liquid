@@ -1,0 +1,15 @@
+{{ 's-rel-products.css' | asset_url | stylesheet_tag }}
+
+{% liquid
+  assign products = product.metafields.custom.related.value
+  assign products_count = products | size
+%}
+
+{% if products_count > 0 %}
+  <section class="s-rel">
+    <h2>YOU MAY ALSO LIKE</h2>
+    <div class="p-s_">
+      {% render 'products-slider', products: products %}
+    </div>
+  </section>
+{% endif %}
