@@ -5,7 +5,7 @@
   assign available = current_variant.available
 %}
 
-{% form 'product', product, class: 'pf' %}
+{% form 'product', product, class: 'pf', id: 'pf' %}
   <input type="hidden" id="variant-id" name="id" value="{{ current_variant.id }}">
   {% comment %}
     Options
@@ -17,23 +17,23 @@
   {% endunless %}
 
   {% comment %}
-    Add to Cart
+      Add to Cart
+    <div class="product_atc">
+      {% if available %}
+        <button
+          type="submit"
+        >
+          Add to Bag
+        </button>
+      {% else %}
+        <button
+          type="submit"
+          disabled
+          class="disabled"
+        >
+          Sold Out
+        </button>
+      {% endif %}
+    </div>
   {% endcomment %}
-  <div class="product_atc">
-    {% if available %}
-      <button
-        type="submit"
-      >
-        Add to Bag
-      </button>
-    {% else %}
-      <button
-        type="submit"
-        disabled
-        class="disabled"
-      >
-        Sold Out
-      </button>
-    {% endif %}
-  </div>
 {% endform %}

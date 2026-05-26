@@ -36,9 +36,11 @@
 }
 
 .h_r {
+  width: 421rem;
   display: flex;
-  justify-content: flex-end;
-  gap: 40rem;
+  justify-content: space-between;
+  /* justify-content: flex-end; */
+  /* gap: 40rem; */
   @media (width < 770px) {
     display: none;
   }
@@ -46,7 +48,7 @@
 
 .h_n {
   display: flex;
-  gap: 40rem;
+  gap: 30rem;
   @media (width < 770px) {
     display: none;
   }
@@ -71,7 +73,8 @@
   font-size: 15rem;
 }
 .h_cb_count {
-  color: #333;
+  /* color: #333; */
+  color: black;
 }
 
 .h_r-m {

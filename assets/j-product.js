@@ -22,7 +22,7 @@ const areArraysEqual = (arr1, arr2) => {
 
 const getVariantByOptions = (options) => {
   const variant = product_variants.find((variant) =>
-    areArraysEqual(variant.options, options)
+    areArraysEqual(variant.options, options),
   );
   return variant;
 };
@@ -53,24 +53,24 @@ const formatPrice = (number) => {
 };
 
 const updateProductInfo = (variant) => {
-  const {  available, price, compare_at_price } = variant;
+  const { available, price, compare_at_price } = variant;
 
   // QUERY SELECTORS
   const $product_compare_price = document.querySelector(
-    ".product_price .compare-price span"
+    ".product_price .compare-price span",
   );
   const $product_current_price = document.querySelector(
-    ".product_price .current-price span"
+    ".product_price .current-price span",
   );
   const $product_atc = document.querySelector(".product_atc button");
   // const $product_image = document.querySelector(".product_image img");
 
   // UPDATE COMPARE PRICE
   if (compare_at_price && compare_at_price > price) {
-    $product_compare_price.classList.remove("d-n");
-    $product_compare_price.textContent = formatPrice(compare_at_price);
+    $product_compare_price?.classList.remove("d-n");
+    $product_compare_price?.textContent = formatPrice(compare_at_price);
   } else {
-    $product_compare_price.classList.add("d-n");
+    $product_compare_price?.classList.add("d-n");
   }
 
   // UPDATE CURRENT PRICE

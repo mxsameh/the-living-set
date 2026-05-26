@@ -5,18 +5,27 @@
     margin-top: 80rem;
   }
 }
+.s-rel_h {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 .s-rel h2 {
   font-size: 50rem;
-  letter-spacing: 7%;
-  font-family: "m";
-  font-weight: 300;
-  text-transform: uppercase;
-  color: var(--c-y);
+  font-family: "st";
+  font-weight: normal;
   @media (width < 770px) {
     font-size: 28rem;
   }
 }
-.s-rel .p-s_ {
+.s-rel nav {
+  display: flex;
+  gap: 40rem;
+}
+.s-rel button:nth-child(2) svg {
+  transform: rotate(180deg);
+}
+.s-rel .swiper_ {
   margin-top: 40rem;
 
   @media (width< 770px) {

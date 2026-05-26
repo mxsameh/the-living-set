@@ -1,8 +1,8 @@
 /* PRODUCT OPTIONS */
 .pf {
-  margin-top: 40px;
+  /* margin-top: 40px; */
   @media (width > 1000px) {
-    margin-top: 80px;
+    /* margin-top: 80px; */
   }
 }
 

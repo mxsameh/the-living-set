@@ -2,8 +2,12 @@
 <script src="{{ 'j-product.js' | asset_url }}" defer></script>
 <script src="{{ 'j-accordion.js' | asset_url }}" defer></script>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
 {% liquid
   assign current_variant = product.selected_or_first_available_variant
+  assign available = current_variant.available
   if current_variant.compare_at_price > current_variant.price
     assign compare_at_price = current_variant.compare_at_price
   endif
@@ -11,15 +15,15 @@
 
 <div class="p">
   <div class="product">
+    <h1>{{ product.title }}</h1>
     <div class="product_info">
       <div class="l">
-        <h1>{{ product.title }}</h1>
         <p>{{ product.description | strip_html }}</p>
       </div>
       <div class="r">
         <div>
           <p>
-            {{ current_variant.metafields.custom.width }}
+            {{ current_variant.metafields.custom.dimensions }}
           </p>
         </div>
         <div>
@@ -28,8 +32,29 @@
             {{ shop.currency }}
           </p>
         </div>
-        <div></div>
-        <div>ADD TO CART</div>
+        <div>
+          {% render 'product-form' %}
+        </div>
+        <div>
+          <div class="product_atc">
+            {% if available %}
+              <button
+                type="submit"
+                form="pf"
+              >
+                Add to Bag
+              </button>
+            {% else %}
+              <button
+                type="submit"
+                disabled
+                class="disabled"
+              >
+                Sold Out
+              </button>
+            {% endif %}
+          </div>
+        </div>
       </div>
     </div>
 

@@ -1,4 +1,6 @@
 {{ 's-rel-products.css' | asset_url | stylesheet_tag }}
+{{ 's-product-card.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'j-related.js' | asset_url }}" defer></script>
 
 {% liquid
   assign products = product.metafields.custom.related.value
@@ -7,9 +9,27 @@
 
 {% if products_count > 0 %}
   <section class="s-rel">
-    <h2>YOU MAY ALSO LIKE</h2>
-    <div class="p-s_">
-      {% render 'products-slider', products: products %}
+    <div class="s-rel_h">
+      <h2>YOU MAY ALSO LIKE</h2>
+      <nav>
+        <button id="swiper-b-prv">
+          {{ 'i-arrow.svg' | inline_asset_content }}
+        </button>
+        <button id="swiper-b-nxt">
+          {{ 'i-arrow.svg' | inline_asset_content }}
+        </button>
+      </nav>
+    </div>
+    <div class="swiper_">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          {% for product in products %}
+            <div class="swiper-slide">
+              {% render 'product-card', product: product %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
     </div>
   </section>
 {% endif %}

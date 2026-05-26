@@ -3,22 +3,26 @@
   padding-top: calc(80rem + var(--h-h));
   padding-bottom: 80rem;
 }
+
+.product h1 {
+  padding-inline: var(--p-i);
+  font-family: "st";
+  font-size: 30rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
 .product_info {
+  margin-top: 32rem;
   padding-inline: var(--p-i);
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
+
 .product_info .l {
   width: 654rem;
-  h1 {
-    font-family: "st";
-    font-size: 30rem;
-    font-weight: normal;
-    text-transform: uppercase;
-  }
   p {
-    margin-top: 24rem;
+    /* margin-top: 24rem; */
     font-size: 16rem;
     line-height: 140%;
   }
@@ -80,16 +84,11 @@
 }
 
 .product_atc button {
-  width: 100%;
-  padding-block: 16px;
-  text-align: center;
-  background-color: black;
-  color: white;
-  margin-top: 40px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 1.1;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid black;
 }
 .product_atc button:disabled {
   background-color: #999;
