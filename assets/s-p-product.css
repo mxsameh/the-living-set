@@ -36,6 +36,9 @@
     justify-self: flex-end;
   }
 }
+.product_info  p{
+  font-size: 16rem;
+}
 
 /* .product {
   display: flex;
@@ -84,7 +87,7 @@
 }
 
 .product_atc button {
-  font-size: 14px;
+  font-size: 14rem;
   font-weight: bold;
   text-transform: uppercase;
   padding-bottom: 4rem;
