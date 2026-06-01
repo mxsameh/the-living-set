@@ -5,6 +5,9 @@
     margin-top: 80rem;
   }
 }
+.s-rel .swiper-wrapper {
+  height: unset;
+}
 .s-rel_h {
   display: flex;
   justify-content: space-between;

@@ -19,11 +19,13 @@
     <div class="product_info">
       <div class="l">
         <p>{{ product.description | strip_html }}</p>
-        {% comment %} <p>
-          *All products are 100 % Copper & Silver Plated
-          <br>
-          *Food Safety Grade Approved
-        </p> {% endcomment %}
+        {% comment %}
+          <p>
+            *All products are 100 % Copper & Silver Plated
+            <br>
+            *Food Safety Grade Approved
+          </p>
+        {% endcomment %}
       </div>
       <div class="r">
         <div>
@@ -31,7 +33,7 @@
             {{ current_variant.metafields.custom.dimensions }}
           </p>
         </div>
-        <div>
+        <div class="product_price">
           <p class="current-price">
             <span>{{ current_variant.price | money_without_currency | remove: '.00' }}</span>
             {{ shop.currency }}

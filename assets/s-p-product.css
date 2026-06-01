@@ -31,12 +31,12 @@
   width: 421rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 44rem;
+  gap: 24rem 44rem;
   & > div:nth-child(2n) {
     justify-self: flex-end;
   }
 }
-.product_info  p{
+.product_info p {
   font-size: 16rem;
 }
 
@@ -94,7 +94,8 @@
   border-bottom: 1px solid black;
 }
 .product_atc button:disabled {
-  background-color: #999;
+  color: #999;
+  border-bottom: unset;
 }
 
 /* PRODUCT DATA */

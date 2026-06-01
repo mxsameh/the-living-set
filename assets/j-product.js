@@ -38,6 +38,7 @@ $product_form.addEventListener("change", () => {
   const variant = getVariantByOptions(selectedOptions);
   const x = $product_form.querySelector("#variant-id");
   x.value = variant.id;
+
   updateProductInfo(variant);
   updateUrl(variant.id);
 });
@@ -68,7 +69,7 @@ const updateProductInfo = (variant) => {
   // UPDATE COMPARE PRICE
   if (compare_at_price && compare_at_price > price) {
     $product_compare_price?.classList.remove("d-n");
-    $product_compare_price?.textContent = formatPrice(compare_at_price);
+    $product_compare_price.textContent = formatPrice(compare_at_price);
   } else {
     $product_compare_price?.classList.add("d-n");
   }
@@ -88,5 +89,4 @@ const updateProductInfo = (variant) => {
     $product_atc.classList.add("disabled");
     $product_atc.textContent = "Sold Out";
   }
-  console.log("updated");
 };

@@ -47,6 +47,12 @@
     grid-column: 4 / span 3;
   }
 }
+.s-colc > a {
+  margin-top: 98rem;
+  display: block;
+  width: 250rem;
+  margin-inline: auto;
+}
 
 .s-gal {
   margin-top: 120rem;

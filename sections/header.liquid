@@ -10,6 +10,9 @@
       <a href="/">
         <img src="{{ 'im-emb-b.png' | asset_url  }}" width="auto" height="auto" alt="logo">
       </a>
+      <a href="/" class="logo">
+        <img src="{{ 'im-logo-b.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+      </a>
 
       {% comment %}
           {% render 'menu-icon' %}
@@ -52,13 +55,15 @@
       </nav>
       {% comment %} <div>{{ 'LOGIN' | link_to: routes.account_login_url }}</div> {% endcomment %}
       <button id="cart-btn" class="h_cb" type="button">
-        Cart (<span id="cart-count" class="h_cb_count">{{- cart.item_count -}}</span>)
+        <img src="{{ 'im-cart.png' | asset_url  }}" width="auto" height="auto" alt="logo">
+        <span id="cart-count" class="h_cb_count">{{- cart.item_count -}}</span>
       </button>
+      {% comment %}
+        <button id="cart-btn" class="h_cb" type="button">
+          Cart (<span id="cart-count" class="h_cb_count">{{- cart.item_count -}}</span>)
+        </button>
+      {% endcomment %}
     </div>
-
-    <a href="/" class="logo">
-      <img src="{{ 'im-logo-b.png' | asset_url  }}" width="auto" height="auto" alt="logo">
-    </a>
 
     <div class="h_r-m">
       <div id="search-btn">

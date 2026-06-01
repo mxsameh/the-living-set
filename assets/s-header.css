@@ -14,15 +14,8 @@
   justify-content: space-between;
   align-items: center;
 }
-/* .h_l,
-.h_r,
-.h_r-m {
-  flex-basis: 100%;
-} */
-/* .h_m {
-  flex-shrink: 0;
-} */
-.h_l a {
+
+.h_l a:not(.logo) {
   display: block;
   width: 80rem;
 }
@@ -39,6 +32,7 @@
   width: 421rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   /* justify-content: flex-end; */
   /* gap: 40rem; */
   @media (width < 770px) {
@@ -70,11 +64,13 @@
 } */
 
 .h_cb {
+  width: 40rem;
   font-size: 15rem;
 }
 .h_cb_count {
   /* color: #333; */
   color: black;
+  display: none;
 }
 
 .h_r-m {
