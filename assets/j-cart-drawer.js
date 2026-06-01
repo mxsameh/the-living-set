@@ -1,9 +1,10 @@
 const $add_to_cart_forms = document.querySelectorAll(
-  'form[action="/cart/add"]'
+  'form[action="/cart/add"]',
 );
 const $cd_ = document.querySelector(".cd_");
 const $cart_btn = document.querySelectorAll("#cart-btn");
 const $h_cart_count = document.querySelectorAll("#cart-count");
+const $indicator = document.querySelector(".h .indi");
 
 const Cart = async (html) => {
   if (!html) {
@@ -15,6 +16,12 @@ const Cart = async (html) => {
   $cd_.innerHTML = $html.querySelector(".cd_").innerHTML;
   $cd_.innerHTML = $html.querySelector(".cd_").innerHTML;
   const count = $html.querySelector(".cd_h_count_").getAttribute("data-count");
+  // console.log("Count", count);
+  if (count == 0) {
+    $indicator?.classList.add("d-n");
+  } else {
+    $indicator?.classList.remove("d-n");
+  }
   $h_cart_count.forEach(($count) => {
     $count.textContent = count;
   });
@@ -110,10 +117,10 @@ const initialize = () => {
   const $cd = document.querySelector(".cd");
   const $cd_close_btn = document.querySelector(".cd_h_close");
   const $quantity_controllers = document.querySelectorAll(
-    ".cd_item-quantity button"
+    ".cd_item-quantity button",
   );
   const $remove_links = document.querySelectorAll(
-    ".cd_ a[href*='/cart/change']"
+    ".cd_ a[href*='/cart/change']",
   );
 
   // Event Listeners

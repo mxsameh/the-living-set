@@ -66,6 +66,16 @@
 .h_cb {
   width: 40rem;
   font-size: 15rem;
+  position: relative;
+}
+.h_cb > div {
+  position: absolute;
+  aspect-ratio: 1;
+  width: 6rem;
+  border-radius: 4rem;
+  background-color: black;
+  left: 21rem;
+  top: 2rem;
 }
 .h_cb_count {
   /* color: #333; */
