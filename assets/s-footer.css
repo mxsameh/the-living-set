@@ -5,7 +5,23 @@
   grid-template-columns: repeat(6, 1fr);
   gap: 44rem;
   @media (width < 770px) {
-    max-width: 600px;
+    grid-template-columns: 1fr;
+    gap: 16rem;
+    padding-block: 24rem;
+  }
+}
+.f > div {
+  font-size: 16rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  @media (width < 770px) {
+    font-size: 14rem;
+    padding-bottom: 8rem;
+    border-bottom: 1px solid black;
+  }
+  &:last-child {
+    border: none !important;
   }
 }
 .f > div:nth-child(2) {
@@ -13,10 +29,4 @@
 }
 .f > div:nth-child(3) {
   grid-column: span 2;
-}
-.f > div {
-  font-size: 16rem;
-  display: flex;
-  flex-direction: column;
-  gap: 8rem;
 }

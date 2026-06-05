@@ -17,7 +17,10 @@
 }
 .s-colc {
   padding-top: 120rem;
-  padding-inline: 44rem;
+  padding-inline: var(--p-i);
+  @media (width < 770px) {
+    padding-top: 80rem;
+  }
 }
 .s-colc h2 {
   font-size: 80rem;
@@ -25,12 +28,20 @@
   text-align: center;
   font-family: "st";
   font-weight: normal;
+  @media (width < 770px) {
+    font-size: 32rem;
+  }
 }
 .s-colc ul {
   margin-top: 120rem;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 80rem 44rem;
+  @media (width < 770px) {
+    margin-top: 64rem;
+    grid-template-columns: 1fr;
+    gap: 48rem;
+  }
 }
 
 .s-colc li {
@@ -46,26 +57,43 @@
   &:nth-of-type(4) {
     grid-column: 4 / span 3;
   }
+
+  @media (width < 770px) {
+    grid-column: unset !important;
+  }
 }
 .s-colc > a {
   margin-top: 98rem;
   display: block;
   width: 250rem;
   margin-inline: auto;
+  @media (width < 770px) {
+    margin-top: 48rem;
+    width: 160rem;
+  }
 }
 
 .s-gal {
   margin-top: 120rem;
+  @media (width < 770px) {
+    margin-top: 64rem;
+  }
 }
 .s-gal_h {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding-inline: var(--p-i);
+  @media (width < 770px) {
+    justify-content: center;
+  }
 }
 .s-gal nav {
   display: flex;
   gap: 40rem;
+  @media (width < 770px) {
+    display: none;
+  }
 }
 .s-gal button:nth-child(2) svg {
   transform: rotate(180deg);
@@ -75,10 +103,19 @@
   font-size: 80rem;
   line-height: 1;
   font-weight: normal;
+
+  @media (width < 770px) {
+    font-size: 30rem;
+    text-align: center;
+  }
 }
 .swiper_ {
   margin-top: 40rem;
   margin-left: 277rem;
+  @media (width < 770px) {
+    margin-top: 32rem;
+    margin-left: unset;
+  }
 }
 .s-gal .swiper-wrapper {
   align-items: flex-start;

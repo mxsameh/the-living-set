@@ -11,21 +11,19 @@
   if current_variant.compare_at_price > current_variant.price
     assign compare_at_price = current_variant.compare_at_price
   endif
+  assign hasEng = false
+  if product.tags contains 'engraving'
+    assign hasEng = true
+  endif
 %}
 
 <div class="p">
   <div class="product">
     <h1>{{ product.title }}</h1>
+
     <div class="product_info">
       <div class="l">
         <p>{{ product.description | strip_html }}</p>
-        {% comment %}
-          <p>
-            *All products are 100 % Copper & Silver Plated
-            <br>
-            *Food Safety Grade Approved
-          </p>
-        {% endcomment %}
       </div>
       <div class="r">
         <div>
@@ -66,6 +64,20 @@
     </div>
 
     {% render 'product-gallery' %}
+
+    <div class="product_data">
+      <p>
+        * 100% Copper & Silver Plated, Food Safety Grade Approved.
+        {% if hasEng %}
+          <br>
+          <br>
+          * Custom engraving available upon request.
+        {% endif %}
+      </p>
+      {% if hasEng %}
+        <a href="#">Inquire about Engraving & Personalization</a>
+      {% endif %}
+    </div>
 
     {% comment %}
         PRODUCT INFO

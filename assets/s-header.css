@@ -18,6 +18,9 @@
 .h_l a:not(.logo) {
   display: block;
   width: 80rem;
+  @media (width < 770px) {
+    width: 50rem;
+  }
 }
 .logo {
   display: none;
