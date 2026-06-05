@@ -1,8 +1,8 @@
-var swiper = new Swiper(".swiper", {
+var swiper = new Swiper(".s-rel .swiper", {
   slidesPerView: 3,
   spaceBetween: "44rem",
   navigation: {
-    nextEl: "#swiper-b-nxt",
-    prevEl: "#swiper-b-prv",
+    nextEl: ".s-rel #swiper-b-nxt",
+    prevEl: ".s-rel #swiper-b-prv",
   },
 });

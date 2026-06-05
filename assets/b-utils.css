@@ -30,3 +30,6 @@
     display: none !important;
   }
 }
+.swiper-wrapper {
+  height: unset !important;
+}
