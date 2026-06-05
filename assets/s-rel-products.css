@@ -2,7 +2,8 @@
   margin-top: 80rem;
   padding-inline: var(--p-i);
   @media (width < 770px) {
-    margin-top: 80rem;
+    margin-top: 64rem;
+    padding-right: 0;
   }
 }
 .s-rel .swiper-wrapper {
@@ -18,12 +19,16 @@
   font-family: "st";
   font-weight: normal;
   @media (width < 770px) {
-    font-size: 28rem;
+    font-size: 32rem;
   }
 }
 .s-rel nav {
   display: flex;
   gap: 40rem;
+
+  @media (width < 770px) {
+    display: none;
+  }
 }
 .s-rel button:nth-child(2) svg {
   transform: rotate(180deg);

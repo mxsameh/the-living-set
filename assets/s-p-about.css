@@ -5,6 +5,10 @@ body {
   padding-inline: var(--p-i);
   padding-top: calc(var(--h-h) + 80rem);
   padding-bottom: 80rem;
+  @media (width < 770px) {
+  padding-top: calc(var(--h-h) + 40rem);
+
+  }
 }
 
 .p p {
@@ -13,6 +17,9 @@ body {
   max-width: 1200rem;
   margin-inline: auto;
   text-align: center;
+  @media (width < 770px) {
+    font-size: 24rem;
+  }
 }
 .p .dd {
   border-image-slice: 27 27 27 27;
