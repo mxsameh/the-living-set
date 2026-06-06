@@ -63,6 +63,9 @@
     gap: 24rem 20rem;
   }
 }
+.current-price {
+  font-weight: 700;
+}
 
 .product_atc button {
   font-size: 14rem;
