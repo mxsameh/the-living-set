@@ -213,7 +213,7 @@ CART FOOTER
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 .cd_f-b p {
   font-size: 12px;

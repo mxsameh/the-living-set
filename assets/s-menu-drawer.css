@@ -9,21 +9,25 @@ MENU DRAWER
   background-color: white;
   z-index: 999;
   display: none;
+  place-items: center;
 
   @media (width < 770px) {
-    display: block;
+    display: grid;
+    height: 100dvh;
+    height: 100vh;
+    top: 0;
   }
 }
 
 #menu-drawer nav {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  /* padding-top: 40px; */
 }
 
 .d_item {
   padding: 16px var(--p-i);
-  border-bottom: 1px solid #333;
+  font-family: "st";
 }
 .d_item.opened svg {
   transform: rotate(45deg);
@@ -32,10 +36,11 @@ MENU DRAWER
 .d_item-h {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
 }
 .d_item span {
-  font-size: 16px;
+  font-size: 32px;
   font-weight: 500;
 }
 .d_item svg {

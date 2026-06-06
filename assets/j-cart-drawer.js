@@ -3,8 +3,7 @@ const $add_to_cart_forms = document.querySelectorAll(
 );
 const $cd_ = document.querySelector(".cd_");
 const $cart_btn = document.querySelectorAll("#cart-btn");
-const $h_cart_count = document.querySelectorAll("#cart-count");
-const $indicator = document.querySelector(".h .indi");
+const $indicator = document.querySelectorAll("#cart-btn .indi");
 
 const Cart = async (html) => {
   if (!html) {
@@ -18,13 +17,14 @@ const Cart = async (html) => {
   const count = $html.querySelector(".cd_h_count_").getAttribute("data-count");
   // console.log("Count", count);
   if (count == 0) {
-    $indicator?.classList.add("d-n");
+    $indicator?.forEach(($indi) => {
+      $indi.classList.add("d-n");
+    });
   } else {
-    $indicator?.classList.remove("d-n");
+    $indicator?.forEach(($indi) => {
+      $indi.classList.remove("d-n");
+    });
   }
-  $h_cart_count.forEach(($count) => {
-    $count.textContent = count;
-  });
 
   initialize();
 };

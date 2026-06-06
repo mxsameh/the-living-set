@@ -2,7 +2,7 @@
   --h-h: 82rem;
   --p-i: 44rem;
   @media (width < 770px) {
-    --h-h: 80rem;
+    --h-h: 63rem;
     --p-i: 20rem;
   }
 }
