@@ -19,7 +19,7 @@
   font-family: "st";
   font-weight: normal;
   @media (width < 770px) {
-    font-size: 32rem;
+    font-size: 30rem;
   }
 }
 .s-rel nav {
@@ -39,4 +39,7 @@
   @media (width< 770px) {
     margin-top: 24rem;
   }
+}
+.s-rel p {
+  display: none;
 }

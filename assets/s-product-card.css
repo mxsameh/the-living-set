@@ -1,7 +1,5 @@
 .pc {
   display: block;
-  /* border: 1px solid #000; */
-  /* padding: 16rem; */
   min-width: 0; /* ✅ Critical to prevent overflow */
 }
 .pc > div {
@@ -22,12 +20,16 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-.pc h3.no-price {
-  text-align: left;
+  text-transform: uppercase;
+  @media (width < 770px) {
+    font-size: 14rem;
+  }
 }
 .pc p {
   flex-shrink: 0;
   font-size: 15rem;
-  /* text-align: center; */
+  text-align: center;
+  @media (width < 770px) {
+    font-size: 14rem;
+  }
 }

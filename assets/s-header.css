@@ -1,25 +1,18 @@
-.h-ph {
-  /* height: var(--h-h); */
-}
 .h {
-  padding: 16rem var(--p-i);
+  padding: 16rem var(--p-i) 0;
   height: var(--h-h);
-  width: 100%;
-  /* background: white; */
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 9999;
 }
 
 .h_l a:not(.logo) {
   display: block;
-  width: 80rem;
+  width: 60rem;
   @media (width < 770px) {
-    width: 50rem;
+    width: 40rem;
   }
 }
 .logo {
@@ -78,20 +71,24 @@
   }
 }
 
-.ccart {
+.cart {
   position: fixed;
   width: 40rem;
   aspect-ratio: 1;
   border: 1px solid #bbb;
   /* background-color: #dedede; */
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   border-radius: 40rem;
   bottom: 24rem;
   right: 20rem;
   z-index: 999;
+  display: none;
+  @media (width < 770px) {
+    display: flex;
+  }
 }
-.ccart img {
+.cart img {
   width: 24rem;
 }

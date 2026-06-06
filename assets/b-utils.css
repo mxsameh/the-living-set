@@ -1,8 +1,8 @@
 :root {
-  --h-h: 82rem;
+  --h-h: 56rem;
   --p-i: 44rem;
   @media (width < 770px) {
-    --h-h: 63rem;
+    --h-h: 42.5rem;
     --p-i: 20rem;
   }
 }

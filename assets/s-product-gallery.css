@@ -1,5 +1,4 @@
 .p_g {
-  margin-top: 80rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24rem;

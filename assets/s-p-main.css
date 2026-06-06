@@ -1,8 +1,10 @@
 .p {
   /* padding-top: 40px; */
-  padding-bottom: 80rem;
-}
-.s-he {
+  margin-top: calc(-1 * var(--h-h));
+  padding-bottom: 160rem;
+  @media (width < 770px) {
+    padding-bottom: 80rem;
+  }
 }
 .s-he picture {
   aspect-ratio: 16/9;
@@ -19,7 +21,7 @@
   padding-top: 120rem;
   padding-inline: var(--p-i);
   @media (width < 770px) {
-    padding-top: 80rem;
+    padding-top: 64rem;
   }
 }
 .s-colc h2 {
@@ -36,7 +38,7 @@
   margin-top: 120rem;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 80rem 44rem;
+  gap: 120rem 44rem;
   @media (width < 770px) {
     margin-top: 64rem;
     grid-template-columns: 1fr;
@@ -63,7 +65,7 @@
   }
 }
 .s-colc > a {
-  margin-top: 98rem;
+  margin-top: 120rem;
   display: block;
   width: 250rem;
   margin-inline: auto;
@@ -84,8 +86,15 @@
   justify-content: space-between;
   align-items: flex-end;
   padding-inline: var(--p-i);
+}
+.s-gal h2 {
+  font-family: "st";
+  font-size: 70rem;
+  line-height: 1;
+  font-weight: normal;
+
   @media (width < 770px) {
-    justify-content: center;
+    font-size: 30rem;
   }
 }
 .s-gal nav {
@@ -98,23 +107,13 @@
 .s-gal button:nth-child(2) svg {
   transform: rotate(180deg);
 }
-.s-gal h2 {
-  font-family: "st";
-  font-size: 80rem;
-  line-height: 1;
-  font-weight: normal;
 
-  @media (width < 770px) {
-    font-size: 30rem;
-    text-align: center;
-  }
-}
 .swiper_ {
   margin-top: 40rem;
   margin-left: 277rem;
   @media (width < 770px) {
     margin-top: 32rem;
-    margin-left: unset;
+    margin-left: 20rem;
   }
 }
 .s-gal .swiper-wrapper {
