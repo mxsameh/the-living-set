@@ -1,5 +1,6 @@
 const $product_form = document.querySelector(".pf");
 const product_variants = product.variants;
+// console.log("s", product_variants);
 
 const getSelectedOptions = () => {
   const selectedOptions = [];
@@ -57,6 +58,9 @@ const updateProductInfo = (variant) => {
   const { available, price, compare_at_price } = variant;
 
   // QUERY SELECTORS
+
+  const $dimensions = document.querySelector("#variant-dimensions");
+
   const $product_compare_price = document.querySelector(
     ".product_price .compare-price span",
   );
@@ -76,6 +80,8 @@ const updateProductInfo = (variant) => {
 
   // UPDATE CURRENT PRICE
   $product_current_price.textContent = formatPrice(price);
+  // Dimensions
+  $dimensions.textContent = variant?.metafields?.dimensions ?? "";
 
   // UPDATE AVAILABILITY
   if (available) {
