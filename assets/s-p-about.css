@@ -4,6 +4,7 @@ body {
 .logo {
   width: 600rem;
   margin-inline: auto;
+  margin-bottom: 160rem;
 }
 .p {
   padding-inline: var(--p-i);
