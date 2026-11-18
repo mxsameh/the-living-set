@@ -15,12 +15,12 @@
     width: 40rem;
   }
 }
-.logo {
+.h .logo {
   display: none;
   width: 421rem;
   position: relative;
 }
-.logo img {
+.h .logo img {
   position: absolute;
 }
 
