@@ -2,7 +2,7 @@ body {
   background: #80b8e9;
 }
 .logo {
-  width: 600rem;
+  max-width: 600rem;
   margin-inline: auto;
   margin-bottom: 120rem;
 }
