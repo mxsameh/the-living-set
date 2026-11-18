@@ -1,6 +1,8 @@
 const $product_form = document.querySelector(".pf");
 const product_variants = product.variants;
 
+console.log("s", product_variants);
+
 const getSelectedOptions = () => {
   const selectedOptions = [];
   const inputs = $product_form.querySelectorAll('input[type="radio"]:checked');
