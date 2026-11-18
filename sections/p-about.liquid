@@ -14,7 +14,25 @@
       <br>
       <br>
     </p>
-    div
+
+    <div class="swiper_">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            <div class="swiper-slide">
+              <figure>
+                <img
+                  src="{{ block.settings.image | image_url}}"
+                  width="auto"
+                  height="auto"
+                >
+              </figure>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
     <p>
       Rooted in a distinctly theatrical sensibility, The Living Set approaches the table as a stage. Silver-plated
       serving pieces, candle holders, and decorative objects become characters within a composition, interacting through
