@@ -76,6 +76,8 @@ const updateProductInfo = (variant) => {
 
   // UPDATE CURRENT PRICE
   $product_current_price.textContent = formatPrice(price);
+  // Dimensions
+  $dimensions.textContent = variant?.metafields?.dimensions ?? "";
 
   // UPDATE AVAILABILITY
   if (available) {
