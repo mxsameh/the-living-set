@@ -33,7 +33,7 @@ body {
 
 .swiper_ {
   margin-top: 40rem;
-  margin-left: 277rem;
+  /* margin-left: 277rem; */
   @media (width < 770px) {
     margin-top: 32rem;
     margin-left: 20rem;
