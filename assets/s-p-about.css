@@ -1,6 +1,10 @@
 body {
   background: #80b8e9;
 }
+.logo {
+  width: 600rem;
+  margin-inline: auto;
+}
 .p {
   padding-inline: var(--p-i);
   padding-top: 80rem;
