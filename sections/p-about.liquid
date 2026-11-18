@@ -2,6 +2,27 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+<script>
+  var swiper = new Swiper('.swiper', {
+    slidesPerView: 2.5,
+    spaceBetween: '44rem',
+    navigation: {
+      nextEl: '#swiper-b-nxt',
+      prevEl: '#swiper-b-prv',
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.2,
+        spaceBetween: 16,
+      },
+
+      770: {
+        slidesPerView: 2.5,
+        spaceBetween: 44,
+      },
+    },
+  });
+</script>
 
 <div class="p">
   <div>
