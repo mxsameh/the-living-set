@@ -10,13 +10,33 @@
   "page": [],
   "product": [
     {
-      "key": "queries",
-      "namespace": "shopify--discovery--product_search_boost",
-      "name": "Search product boosts",
-      "description": "List of search queries for which a product gets higher rank in search results",
+      "key": "details",
+      "namespace": "custom",
+      "name": "details",
+      "description": "",
       "type": {
-        "name": "list.single_line_text_field",
+        "name": "multi_line_text_field",
         "category": "TEXT"
+      }
+    },
+    {
+      "key": "size_and_fit",
+      "namespace": "custom",
+      "name": "size and fit",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "size",
+      "namespace": "shopify",
+      "name": "Size",
+      "description": "Used to specify the size of a product, such as 0-3 months or Extra large (XL)",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
       }
     },
     {
@@ -26,86 +46,6 @@
       "description": "Defines the primary color or pattern, such as blue or striped",
       "type": {
         "name": "list.metaobject_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "material",
-      "namespace": "shopify",
-      "name": "Material",
-      "description": "Defines a product's primary material, such as cotton or wool",
-      "type": {
-        "name": "list.metaobject_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "background_color",
-      "namespace": "custom",
-      "name": "Background Color",
-      "description": "",
-      "type": {
-        "name": "color",
-        "category": "COLOR"
-      }
-    },
-    {
-      "key": "related",
-      "namespace": "custom",
-      "name": "related",
-      "description": "",
-      "type": {
-        "name": "list.product_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "capacity",
-      "namespace": "custom",
-      "name": "Capacity",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "usage-type",
-      "namespace": "shopify",
-      "name": "Usage type",
-      "description": "Specifies the product's intended use cycle, e.g. reusable, refillable",
-      "type": {
-        "name": "list.metaobject_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "suitable-for-container-type",
-      "namespace": "shopify",
-      "name": "Suitable for container type",
-      "description": "Identifies the type of container the product is designed for, such as bottle or can",
-      "type": {
-        "name": "list.metaobject_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "dimensions",
-      "namespace": "custom",
-      "name": "Dimensions",
-      "description": "",
-      "type": {
-        "name": "multi_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "complementary",
-      "namespace": "custom",
-      "name": "complementary",
-      "description": "",
-      "type": {
-        "name": "list.product_reference",
         "category": "REFERENCE"
       }
     }
