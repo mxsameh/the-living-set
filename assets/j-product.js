@@ -1,5 +1,6 @@
 const $product_form = document.querySelector(".pf");
 const product_variants = product.variants;
+console.log(product_variants);
 
 const getSelectedOptions = () => {
   const selectedOptions = [];
@@ -36,7 +37,6 @@ const updateUrl = (variantId) => {
 $product_form.addEventListener("change", () => {
   const selectedOptions = getSelectedOptions();
   const variant = getVariantByOptions(selectedOptions);
-  console.log("s", variant.metafields);
   const x = $product_form.querySelector("#variant-id");
   x.value = variant.id;
 
