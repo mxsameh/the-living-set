@@ -1,7 +1,7 @@
 const $product_form = document.querySelector(".pf");
 const product_variants = product.variants;
 
-console.log("s", product_variants[0].metafields.custom.dimensions.value);
+console.log("s", product_variants[0].metafields);
 
 const getSelectedOptions = () => {
   const selectedOptions = [];
