@@ -53,6 +53,19 @@
 {% schema %}
 {
   "name": "about",
-  "settings": []
+  "settings": [],
+  "blocks": [
+    {
+      "name": "Gallery",
+      "type": "gallery",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}
