@@ -90,7 +90,21 @@
 </div>
 
 <script>
-  const product = {{ product | json }};
+    const product = {{ product | json }};
+
+  const variantMetafields = {
+    {%- for variant in product.variants -%}
+      "{{ variant.id }}": {
+        "dimensions": {{ variant.metafields.custom.dimensions.value | json }},
+        "width": {{ variant.metafields.custom.width.value | json }}
+      }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  };
+
+  // attach them so variant.metafields works in your existing code
+  product.variants.forEach((v) => {
+    v.metafields = variantMetafields[v.id] ?? {};
+  });
 </script>
 
 {% schema %}
