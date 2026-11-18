@@ -1,9 +1,9 @@
 var swiper = new Swiper(".swiper", {
   slidesPerView: 3,
-  spaceBetween: "44rem",
-  autoplay:{
+  spaceBetween: "24rem",
+  autoplay: {
     delay: 3000,
-  }
+  },
   navigation: {
     nextEl: "#swiper-b-nxt",
     prevEl: "#swiper-b-prv",
@@ -15,7 +15,7 @@ var swiper = new Swiper(".swiper", {
     },
 
     770: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 24,
     },
   },
