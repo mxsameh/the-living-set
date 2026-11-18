@@ -1,6 +1,5 @@
 const $product_form = document.querySelector(".pf");
 const product_variants = product.variants;
-console.log(product_variants);
 
 const getSelectedOptions = () => {
   const selectedOptions = [];
