@@ -57,6 +57,9 @@ const updateProductInfo = (variant) => {
   const { available, price, compare_at_price } = variant;
 
   // QUERY SELECTORS
+
+  const $dimensions = document.querySelector("#variant-dimensions");
+
   const $product_compare_price = document.querySelector(
     ".product_price .compare-price span",
   );
