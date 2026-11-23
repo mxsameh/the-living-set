@@ -4,9 +4,8 @@ body {
 .logo {
   max-width: 400rem;
   margin-inline: auto;
-  margin-bottom: 120rem;
+  margin-bottom: 80rem;
   @media (width < 770px) {
-    margin-bottom: 80rem;
   }
 }
 .p {
@@ -19,21 +18,21 @@ body {
   }
 }
 
-.p p {
+.p .p0 {
   font-size: 40rem;
   font-family: "st";
   max-width: 1200rem;
   margin-inline: auto;
   text-align: center;
   @media (width < 770px) {
-    /* font-size: 24rem; */
     font-size: 20rem;
   }
 }
-.p0{
-  font-size: 40rem;
-  font-family: "st";
-
+.p .p1 {
+  font-size: 30rem;
+  font-family: "p";
+  line-height: 1.4;
+  max-width: 1100rem;
 }
 .p .dd {
   border-image-slice: 27 27 27 27;
