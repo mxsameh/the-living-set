@@ -32,11 +32,14 @@ body {
 .t01 {
   margin-bottom: 160rem;
   @media (width < 770px) {
-  margin-bottom: 80rem;
-}
+    margin-bottom: 80rem;
+  }
 }
 .t02 {
   margin-top: 160rem;
+  @media (width < 770px) {
+    margin-top: 80rem;
+  }
 }
 .p .p1 {
   font-size: 30rem;
