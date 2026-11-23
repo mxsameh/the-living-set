@@ -40,6 +40,9 @@ body {
   font-family: "pp";
   line-height: 1.4;
   max-width: 1100rem;
+  @media (width < 770px) {
+    font-size: 20rem;
+  }
 }
 .p .dd {
   border-image-slice: 27 27 27 27;
