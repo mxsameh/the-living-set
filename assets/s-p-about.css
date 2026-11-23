@@ -73,6 +73,9 @@ body {
   margin-block: 80rem;
   display: flex;
   gap: 15rem;
+  @media (width < 770px) {
+    margin-block: 60rem;
+  }
 }
 
 .swiper_ {
