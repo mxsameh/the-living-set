@@ -65,6 +65,9 @@ body {
   line-height: 1.4;
   max-width: 1100rem;
   margin-left: auto;
+  @media (width < 770px) {
+    font-size: 16rem;
+  }
 }
 .gal {
   margin-block: 80rem;
