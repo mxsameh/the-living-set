@@ -28,9 +28,10 @@ body {
     font-size: 20rem;
   }
 }
-.p0 {
-  font-size: 40rem;
-  font-family: "st";
+.p .p1 {
+  font-size: 30rem;
+  font-family: "p";
+
 }
 .p .dd {
   border-image-slice: 27 27 27 27;
