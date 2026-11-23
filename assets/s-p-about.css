@@ -2,7 +2,7 @@ body {
   background: #80b8e9;
 }
 .logo {
-  max-width: 600rem;
+  max-width: 400rem;
   margin-inline: auto;
   margin-bottom: 120rem;
   @media (width < 770px) {
@@ -29,6 +29,11 @@ body {
     /* font-size: 24rem; */
     font-size: 20rem;
   }
+}
+.p0{
+  font-size: 40rem;
+  font-family: "st";
+
 }
 .p .dd {
   border-image-slice: 27 27 27 27;
