@@ -42,7 +42,7 @@ body {
 .swiper_ {
   margin-inline: calc(-1 * var(--p-i));
   user-select: none;
-  margin-block: 64rem;
+  margin-block: 120rem;
   @media (width < 770px) {
     margin-block: 40rem;
     margin-inline: calc(-1 * var(--p-i));
