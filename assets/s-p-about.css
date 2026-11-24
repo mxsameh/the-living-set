@@ -18,7 +18,7 @@ body {
   }
 }
 
-.p .t0 {
+.p {
   font-weight: normal;
   font-size: 40rem;
   font-family: "st";
@@ -29,18 +29,7 @@ body {
     font-size: 20rem;
   }
 }
-.t01 {
-  margin-bottom: 160rem;
-  @media (width < 770px) {
-    margin-bottom: 80rem;
-  }
-}
-.t02 {
-  margin-top: 160rem;
-  @media (width < 770px) {
-    margin-top: 80rem;
-  }
-}
+
 .p .p1 {
   font-size: 30rem;
   font-family: "pp";
