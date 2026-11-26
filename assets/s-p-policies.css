@@ -41,7 +41,7 @@ body {
   padding-left: 24rem;
 }
 .policy li {
-  list-style: circle;
+  list-style: disc;
 }
 .policy li:not(:first-child) {
   margin-top: 16rem;
