@@ -1,6 +1,9 @@
 body {
   background: #80b8e9;
 }
+.p {
+  padding-top: 80rem;
+}
 
 .p h1 {
   font-size: 40rem;
