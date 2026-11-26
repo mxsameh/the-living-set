@@ -74,3 +74,9 @@
     margin-bottom: 48rem;
   }
 }
+.colc figure {
+  padding: 16rem;
+}
+.coloc a:hover figure {
+  background: #80b8e9;
+}
