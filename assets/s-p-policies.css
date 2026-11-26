@@ -20,6 +20,7 @@ body {
 }
 
 .policies {
+  margin-top: 80rem;
   max-width: 1200rem;
   margin-inline: auto;
 }
@@ -35,6 +36,9 @@ body {
 }
 .policy ul {
   margin-top: 24rem;
+}
+.policy li {
+  list-style: circle;
 }
 .policy li:not(:first-child) {
   margin-top: 16rem;
