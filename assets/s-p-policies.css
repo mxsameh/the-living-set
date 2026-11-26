@@ -4,6 +4,9 @@ body {
 .p {
   padding-block: 80rem;
   padding-inline: var(--p-i);
+  @media (width < 770px) {
+    padding-top: 64rem;
+  }
 }
 
 .p h1 {
