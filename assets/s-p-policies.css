@@ -13,6 +13,7 @@ body {
   font-size: 16rem;
   max-width: 1200rem;
   margin-inline: auto;
+  text-align: center;
 }
 
 .policies {
