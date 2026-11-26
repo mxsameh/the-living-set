@@ -5,5 +5,33 @@ body {
 .p h1 {
   font-size: 40rem;
   text-align: center;
+  font-family: "st";
+  font-width: normal;
 }
-.p 
+.p > p {
+  margin-top: 40rem;
+  font-size: 16rem;
+  max-width: 1200rem;
+  margin-inline: auto;
+}
+
+.policies {
+  max-width: 1200rem;
+  margin-inline: auto;
+}
+.policy {
+  margin-top: 40rem;
+}
+.policy h3 {
+  font-size: 20rem;
+}
+.policy p {
+  margin-top: 24rem;
+  font-size: 16rem;
+}
+.policy ul {
+  margin-top: 24rem;
+}
+.policy li:not(:first-child) {
+  margin-top: 16rem;
+}
